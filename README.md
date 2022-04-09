@@ -52,4 +52,4 @@ Berikut adalah proses instalasi kedua library tersebut. Script diatas di dapat d
 
 > e
 
-Rata-rata atau *mean* dari distribusi geometrik adalah $(1-p)/p$, dan variansi didapat dari $(1-p)/p^2$.
+Rata-rata atau *mean* dari distribusi geometrik adalah ![mean](https://latex.codecogs.com/svg.image?\frac{1-p}{p}), dan variansi didapat dari ![variance](https://latex.codecogs.com/svg.image?\frac{1-p}{p^2}).
