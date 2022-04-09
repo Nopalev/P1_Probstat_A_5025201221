@@ -36,11 +36,15 @@ data.frame(x = 0:10, prob = dgeom(x = 0:10, prob = p)) %>%
     size = 3,
     vjust = 0
   ) +
-  labs(title = "Probability of X = 3 Failures Prior to First Success",
-       subtitle = "Geometric(.2)",
-       x = "Failures prior to first success (x)",
-       y = "Probability") 
+  labs(title = "Peluang X = 3 gagal Sebelum Sukses Pertama",
+       subtitle = "Geometrik(.2)",
+       x = "Kegagalan Sebelum Sukses Pertama (x)",
+       y = "Peluang") 
 ```
+
+![Histogram](https://media.discordapp.net/attachments/910899681893171280/962374861093765130/unknown.png)
+
+Berikut adalah histogram soal 1d
 
 Catatan: apabila gagal dilakukan proses *run*, maka perlu dilakukan instalasi *library* `dplyr` dan `ggplot2`
 
