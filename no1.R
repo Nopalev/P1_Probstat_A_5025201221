@@ -2,7 +2,8 @@
 
 p = 0.20
 n = 3
-dgeom(x = n, prob = p)
+x <- dgeom(x = n, prob = p)
+print(x)
 
 # 1b
 
@@ -24,7 +25,7 @@ data.frame(x = 0:10, prob = dgeom(x = 0:10, prob = p)) %>%
     vjust = 0
   ) +
   labs(title = "Peluang X = 3 gagal Sebelum Sukses Pertama",
-       subtitle = "Geometrik(.2)",
+       subtitle = "",
        x = "Kegagalan Sebelum Sukses Pertama (x)",
        y = "Peluang") 
 
@@ -35,4 +36,4 @@ data.frame(x = 0:10, prob = dgeom(x = 0:10, prob = p)) %>%
 
 #variance
 
-(1-p)/(p*p)
+(1-p)/(p^2)
