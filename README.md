@@ -176,3 +176,47 @@ mean(rexp(100, 3))
 
 sd(rexp(100, 3))^2
 ```
+## 6
+
+> a
+
+Fungsi probabilitasi didapat dari *script* berikut:
+
+```r
+n = 100
+mean = 50
+standardeviasi = 8
+
+set.seed(1)
+data <- rnorm(n, mean, standardeviasi)
+summary(data)
+
+x1 = runif(1, min = min(data), max = mean)
+x2 = runif(1, min = mean, max = max(data))
+
+pnorm(x1, mean, standardeviasi)
+pnorm(x2, mean, standardeviasi)
+
+pnorm(x1, mean, standardeviasi) - pnorm(x2, mean, standardeviasi)
+plot(data)
+```
+
+> b
+
+Penggambaran grafik histogram dijalankan dengan *script* berikut:
+
+```r
+hist(data, 50, main = "5025201221_Naufal Faadhilah_Probstat_A_DNhistogram")
+```
+
+Dengan histogramnya adalah sebagai berikut:
+
+![histogram](https://cdn.discordapp.com/attachments/910899681893171280/962728444213461062/unknown.png)
+
+> c
+
+Variansi atau *variance* dari distribusi normal didapat dari *script* berikut:
+
+```r
+(sd(data)) ^ 2
+```
